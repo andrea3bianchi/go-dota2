@@ -3,11 +3,11 @@ package dota2
 import (
 	"context"
 
+	devents "github.com/andrea3bianchi/go-dota2/events"
+	gcsdkm "github.com/andrea3bianchi/go-dota2/protocol"
+	gcsm "github.com/andrea3bianchi/go-dota2/protocol"
+	"github.com/andrea3bianchi/go-dota2/state"
 	"github.com/faceit/go-steam/protocol/gamecoordinator"
-	devents "github.com/paralin/go-dota2/events"
-	gcsdkm "github.com/paralin/go-dota2/protocol"
-	gcsm "github.com/paralin/go-dota2/protocol"
-	"github.com/paralin/go-dota2/state"
 )
 
 // SetPlaying informs Steam we are playing / not playing Dota 2.

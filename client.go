@@ -10,13 +10,13 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/sirupsen/logrus"
 
-	devents "github.com/paralin/go-dota2/events"
-	bgcm "github.com/paralin/go-dota2/protocol"
-	gcm "github.com/paralin/go-dota2/protocol"
-	gcsdkm "github.com/paralin/go-dota2/protocol"
-	gcsm "github.com/paralin/go-dota2/protocol"
-	"github.com/paralin/go-dota2/socache"
-	"github.com/paralin/go-dota2/state"
+	devents "github.com/andrea3bianchi/go-dota2/events"
+	bgcm "github.com/andrea3bianchi/go-dota2/protocol"
+	gcm "github.com/andrea3bianchi/go-dota2/protocol"
+	gcsdkm "github.com/andrea3bianchi/go-dota2/protocol"
+	gcsm "github.com/andrea3bianchi/go-dota2/protocol"
+	"github.com/andrea3bianchi/go-dota2/socache"
+	"github.com/andrea3bianchi/go-dota2/state"
 )
 
 // AppID is the ID for dota2
