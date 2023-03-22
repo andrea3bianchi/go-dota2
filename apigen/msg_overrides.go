@@ -115,7 +115,11 @@ var msgSenderOverrides = map[dm.EDOTAGCMsg]MsgSender{
 
 	dm.EDOTAGCMsg_k_EMsgWebapiDPCSeasonResults: MsgSenderNone,
 
-	dm.EDOTAGCMsg_k_EMsgClientToGCGiveTip: MsgSenderNone,
+	dm.EDOTAGCMsg_k_EMsgClientToGCGiveTip:             MsgSenderNone,
+	dm.EDOTAGCMsg_k_EMsgClientToGCClaimSwag:           MsgSenderNone,
+	dm.EDOTAGCMsg_k_EMsgLobbyGauntletProgress:         MsgSenderNone,
+	dm.EDOTAGCMsg_k_EMsgClientToGCApplyGauntletTicket: MsgSenderNone,
+	dm.EDOTAGCMsg_k_EMsgLobbyAdditionalAccountData:    MsgSenderNone,
 }
 
 // msgMethodNameOverrides overrides the generated client method names.

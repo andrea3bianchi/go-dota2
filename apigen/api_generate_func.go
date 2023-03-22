@@ -49,7 +49,7 @@ func buildGeneratedRequestFunc(
 			fmt.Printf("Request: %v matched to response: %v\n", msgID.String(), rMsgID.String())
 			respProtoType, err := LookupMessageProtoType(protoMap, rMsgID)
 			if err != nil {
-				return nil, err
+				return nil, fmt.Errorf("unable to lookup resp proto type: %w", err)
 			}
 
 			genReqFunc.respType = respProtoType.Obj

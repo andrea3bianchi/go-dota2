@@ -36,7 +36,7 @@ cp \
     ${WORK_DIR}/orig/
 
 mkdir -p ${WORK_DIR}/orig/google/protobuf
-cp -ra ${GAME_PATH}/google/protobuf/. ${WORK_DIR}/orig/google/protobuf/
+cp -a ${GAME_PATH}/google/protobuf/. ${WORK_DIR}/orig/google/protobuf/
 
 cd ${WORK_DIR}
 # Add valve_extensions.proto
@@ -50,6 +50,8 @@ for f in ${WORK_DIR}/orig/*.proto ; do
             -e "s/required \./required /g" \
             -e "s/repeated \./repeated /g" \
             -e "s#google/protobuf/valve_extensions.proto#valve_extensions.proto#g" \
+            -e "/steammessages_steamlearn.steamworkssdk.proto/d" \
+            -e "/CMsgSteamLearnHMACKeys/d" \
             -e "s/\t\./\t/g" >\
             ${WORK_DIR}/protos/${fname}
 done

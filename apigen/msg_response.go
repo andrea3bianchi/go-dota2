@@ -109,5 +109,5 @@ func LookupMessageProtoType(protoMap map[string]*ProtoType, msgID gcm.EDOTAGCMsg
 		}
 	}
 
-	return nil, errors.Errorf("unable to find proto for: %s", msgID.String())
+	return nil, errors.Errorf("unable to find proto for %s", msgID.String())
 }
